@@ -37,7 +37,7 @@ mainView.hideSidebar = function(cb) {
 app.onPageInit('index', function(page) {
   
   $('#btn-guide').on('click', function() {
-    mainView.router.loadPage('test.html?' + Math.random() );
+    mainView.router.loadPage('test.html?' + Math.random());
   });
 
 });
@@ -47,7 +47,7 @@ app.onPageInit('index', function(page) {
 app.onPageInit('about', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
-  // mainView.showSidebar();
+  mainView.showSidebar();
 
   $('.eps-back').on('click', function() {
     $('.navbar').removeClass('navbar-brand no-border');
@@ -56,7 +56,8 @@ app.onPageInit('about', function(page) {
   });
   
 });
-app.onPageAfterBack('about', function() {
+app.onPageBack('about', function() {
+  mainView.hideSidebar();
   $('.eps-back').off('click');
 });
 /* /page about */
