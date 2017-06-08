@@ -5,6 +5,20 @@ select{
   font-family: 'DIN', 'Microsoft YaHei',tahoma,arial,'Hiragino Sans GB','\\5b8b\4f53',sans-serif;
   color: #2e3032;
 }
+.cls:before,
+.cls:after{
+  content:'';
+  display: table;
+}
+.cls:after{
+  clear: both;
+}
+.lf{
+  float: left;
+}
+.rt{
+  float: right;
+}
 /* /font */
 /* ========== navbar ========== */
 .navbar ~ .pages .page-content{
@@ -54,7 +68,7 @@ select{
 /* ========== /page ========== */
 /* ========== form ========== */
 ::-webkit-input-placeholder { /* WebKit browsers */
-  color:#aaa;v
+  color:#aaa;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
   color:#aaa;
@@ -69,6 +83,7 @@ select{
   display: block;
 }
 .eps-form .eps-form-group{
+  width: 700px;
   display: block;
   margin-bottom: 50px;
   padding: 17px 20px;
@@ -84,7 +99,7 @@ select{
   clear: both;
 }
 .eps-form .eps-form-group .eps-form-icon{
-  float: left;
+  position: absolute;
   width: 66px;
   height: 66px;
   line-height: 66px;
@@ -110,7 +125,7 @@ select{
   border: none;
   font-size: 42px;
   line-height: 1;
-  min-width: 579px;
+  width: 100%;
 }
 /* ========== /form ========== */
 
@@ -196,6 +211,21 @@ select{
   color: #fff;
 }
 /* eps-xs-btn */
+
+/*eps-btn-test*/
+.eps-btn.eps-btn-test{
+  padding:30px 43px;
+  fontsize:38px;
+  border-radius:7px;
+  box-shadow: none;
+  border: 2px solid #00abfb;
+}
+.eps-btn.eps-btn-test:active {
+  box-sizing: border-box;
+  background: #fff;
+  color: #00abfb;
+}
+/*eps-lg-btn*/
 /* ========== /btn ========== */
 
 
@@ -467,4 +497,20 @@ h6{
   vertical-align: -7px;
 }
 /* /index */
+/*identify-step1*/
+.eps-guide{
+  width: 600px;
+  height: 600px;
+  border-radius: 7px;
+  background: #d4efff;
+}
+.test-control{
+  position: relative;
+}
+.phoneNum .eps-btn-test{
+  position: absolute;
+  right: -300px;
+  top: 0;
+}
+/*identify-step1*/
 /* ========== /page ========== */
