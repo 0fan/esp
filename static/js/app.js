@@ -33,7 +33,11 @@ mainView.hideSidebar = function(cb) {
 
 /* page index */
 app.onPageInit('index', function(page) {
-  // $('.navbar').removeClass('navbar-brand no-border');
+  
+$('#btn-guide').on('click', function() {
+  mainView.router.loadPage('form-template.html');
+});
+
 });
 /* /page index */
 

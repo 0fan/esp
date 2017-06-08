@@ -1,4 +1,4 @@
-font */
+/* font */
 body,
 input,
 select{
@@ -121,7 +121,7 @@ select{
   text-align: center;
   font-size: 42px;
   line-height: 1;
-  padding: 34px 150px;
+  padding: 34px 116px;
   border-radius: 55px;
   background: #00abfb;
   color: #fff;
@@ -131,6 +131,13 @@ select{
   user-select: none;
   transition: all .15s;
   box-shadow: 0 20px 50px rgba(0, 171, 251, .6);
+  border: none;
+  outline: 0;
+}
+
+.eps-btn:active{
+  transform: scale(.95);
+  box-shadow: none;
 }
 
 /*eps-lg-btn*/
@@ -400,4 +407,60 @@ h6{
 /* ==========  /eps-block ========== */
 
 /* ========== page ========== */
+/* index */
+.page[data-page=index] .guide{
+  margin: 50px 0;
+}
+.page[data-page=index] .guide .guide-inner{
+  white-space: nowrap;
+  text-align: center;
+}
+.page[data-page=index] .guide .guide-item{
+  display: inline-block;
+  width: 360px;
+  height: 410px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 22px rgba(0, 140, 227, .4);
+  margin: 0 25px;
+}
+.page[data-page=index] .guide-in{
+  text-align: center;
+}
+.page[data-page=index] .toolbar{
+  background: #008ce3;
+  color: #fff;
+  font-size: 30px;
+}
+.page[data-page=index] .toolbar .toolbar-inner{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.page[data-page=index] .toolbar .icon{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 38px;
+  line-height: 1;
+}
+.page[data-page=index] .toolbar .name,
+.page[data-page=index] .toolbar .notice,
+.page[data-page=index] .toolbar .tel{
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.page[data-page=index] .toolbar .name span{
+  font-size: 38px;
+  vertical-align: -4px;
+}
+.page[data-page=index] .toolbar .notice span{
+  font-size: 30px;
+  vertical-align: -2px;
+}
+.page[data-page=index] .toolbar .tel span{
+  font-size: 54px;
+  font-weight: 'Medium';
+  font-family: 'DIN';
+  vertical-align: -7px;
+}
+/* /index */
 /* ========== /page ========== */
