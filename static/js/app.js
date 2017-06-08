@@ -12,8 +12,10 @@ var app = new Framework7({
 
 /* 初始化view */
 var mainView = app.addView('.view-main', {
-  
+  dynamicNavbar: true
 });
+
+$$ = Framework7.$;
 
 mainView.showSidebar = function(cb) {
   $('.sidebar').addClass('active');
@@ -34,11 +36,29 @@ mainView.hideSidebar = function(cb) {
 /* page index */
 app.onPageInit('index', function(page) {
   
-$('#btn-guide').on('click', function() {
-  mainView.router.loadPage('form-template.html');
-});
+  $('#btn-guide').on('click', function() {
+    mainView.router.loadPage('test.html?' + Math.random() );
+  });
 
 });
 /* /page index */
+
+/* page about */
+app.onPageInit('about', function(page) {
+
+  $('.navbar').addClass('navbar-brand no-border');
+  // mainView.showSidebar();
+
+  $('.eps-back').on('click', function() {
+    $('.navbar').removeClass('navbar-brand no-border');
+    // mainView.hideSidebar();
+    mainView.router.back();
+  });
+  
+});
+app.onPageAfterBack('about', function() {
+  $('.eps-back').off('click');
+});
+/* /page about */
 
 app.init()
