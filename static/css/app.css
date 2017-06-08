@@ -114,8 +114,6 @@ select{
 }
 /* ========== /form ========== */
 
-
-
 /* ========== /btn ========== */
 .eps-btn{
   display: inline-block;
@@ -328,3 +326,30 @@ select{
   font-size: 50px;
 }
 /* ========== /steps ========== */
+/* ========== sidebar ========== */
+.sidebar{
+  position: absolute;
+  top: 120px;
+  left: 0;
+  bottom: 0;
+  width: 340px;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+  padding: 20px 40px;
+  z-index: 500;
+  transition: all .3s;
+  transform: translateX(-340px);
+}
+.sidebar.active{
+  transform: translateX(0); 
+}
+.sidebar .sidebar-title{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #444;
+}
+.page-content{
+  transition: all .3s;
+}
+/* ========== /sidebar ========== */

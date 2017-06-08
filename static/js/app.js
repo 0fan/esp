@@ -12,12 +12,28 @@ var app = new Framework7({
 
 /* 初始化view */
 var mainView = app.addView('.view-main', {
-
+  
 });
+
+mainView.showSidebar = function(cb) {
+  $('.sidebar').addClass('active');
+  $('.page-content').css({paddingLeft: '340px'});
+  $('.page-content').one('webkitTransitionEnd mozTransitionEnd MSTransitionEnd oTransitionend Transitionend', function() {
+    cb && cb();
+  });
+}
+
+mainView.hideSidebar = function(cb) {
+  $('.sidebar').removeClass('active');
+  $('.page-content').css({paddingLeft: '0'});
+  $('.page-content').one('webkitTransitionEnd mozTransitionEnd MSTransitionEnd oTransitionend Transitionend', function() {
+    cb && cb();
+  });
+}
 
 /* page index */
 app.onPageInit('index', function(page) {
-  console.log('page index enter');
+  // $('.navbar').removeClass('navbar-brand no-border');
 });
 /* /page index */
 
