@@ -1,0 +1,115 @@
+/* font */
+body,
+input,
+select{
+  font-family: 'DIN', 'Microsoft YaHei',tahoma,arial,'Hiragino Sans GB','\\5b8b\4f53',sans-serif;
+  color: #2e3032;
+}
+/* /font */
+/* ========== navbar ========== */
+.navbar ~ .pages .page-content{
+  padding-top: 120px;
+}
+.navbar-inner{
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.navbar .logo{
+  margin-right: 40px;
+}
+.navbar .right a + a{
+  margin-left: 60px;
+}
+.navbar a.link{
+  padding: 0;
+}
+.navbar .link .icon{
+  line-height: 1;
+  font-size: 50px;
+}
+.navbar .link span{
+  font-size: 24px;
+}
+.navbar .link.eps-back .icon{
+  font-size: 70px;
+}
+.navbar .link .span{
+  margin-left: -20px;
+}
+.navbar .link.eps-back i + span{
+  margin-left: -10px;
+}
+/* navbar-brand */
+.navbar.navbar-brand{
+  background: #008ce3;
+}
+.navbar.navbar-brand .link{
+  color: #fff;
+}
+/* ========== /navbar ========== */
+/* ========== page ========== */
+.page{
+  background: #fff;
+}
+/* ========== /page ========== */
+/* ========== form ========== */
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:#aaa;v
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:#aaa;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:#aaa;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:#aaa;
+}
+.eps-form{
+  display: block;
+}
+.eps-form .eps-form-group{
+  display: block;
+  margin-bottom: 50px;
+  padding: 17px 20px;
+  background: #edf2f5;
+  border-radius: 8px;
+}
+.eps-form .eps-form-group:before,
+.eps-form .eps-form-group:after{
+  content: '';
+  display: table;
+}
+.eps-form .eps-form-group:after{
+  clear: both;
+}
+.eps-form .eps-form-group .eps-form-icon{
+  float: left;
+  width: 66px;
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  color: #00abfb;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.eps-form .eps-form-group.hasWraming .eps-form-icon{
+  color: #ffba01;
+}
+.eps-form .eps-form-group .eps-form-icon .icon{
+  font-size: 40px;
+}
+.eps-form .eps-form-control{
+  background: transparent;
+  display: block;
+  margin-left: 66px;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  border: none;
+  font-size: 42px;
+  line-height: 1;
+  min-width: 579px;
+}
+/* ========== /form ========== */
