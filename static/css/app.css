@@ -1,4 +1,4 @@
-/* font */
+font */
 body,
 input,
 select{
@@ -353,3 +353,51 @@ select{
   transition: all .3s;
 }
 /* ========== /sidebar ========== */
+
+/* ========== font ========== */
+/* 首页欢迎文案 */
+h1{
+  font-size: 48px;
+  font-weight: bold;
+}
+/* 开卡结果提示及首页项目名 */
+h2{
+  font-size: 38px;
+  font-weight: normal;
+}
+/* E卡用字 */
+h3{
+  font-size: 34px;
+  font-weight: 100;
+}
+/* 项目选项卡名称 */
+h4{
+  font-size: 34px;
+  font-weight: normal;
+}
+/* E卡信息及首页公告内容 */
+h5{
+  font-size: 30px;
+  font-weight: normal;
+}
+/* E卡修改及流程页左侧大进程用字 */
+h6{
+  font-size: 26px; 
+  font-weight: normal;
+}
+.color-primary{
+  color: #009de6;
+}
+.no-margin{
+  margin: 0;
+}
+/* ========== /font ========== */
+
+/* ========== eps-block ========== */
+.eps-block{
+  padding: 50px 70px;
+}
+/* ==========  /eps-block ========== */
+
+/* ========== page ========== */
+/* ========== /page ========== */
