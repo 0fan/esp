@@ -62,4 +62,75 @@ app.onPageBack('about', function() {
 });
 /* /page about */
 
+/* /page identify-step1 */
+app.onPageInit('identify-step1', function(page) {
+
+  $('.navbar').addClass('navbar-brand no-border');
+  mainView.showSidebar();
+
+  $('.eps-back').on('click', function() {
+    $('.navbar').removeClass('navbar-brand no-border');
+    // mainView.hideSidebar();
+    mainView.router.back();
+  });
+  $('#toI2').click(function (e) {
+    e.preventDefault();
+    mainView.router.loadPage('identify-step2.html?'+Math.random());
+  })
+});
+/* /page identify-step1 */
+
+/* /page identify-step2 */
+app.onPageInit('identify-step2', function(page) {
+
+  $('.navbar').addClass('navbar-brand no-border');
+  mainView.showSidebar();
+
+  $('.eps-back').on('click', function() {
+    $('.navbar').removeClass('navbar-brand no-border');
+    // mainView.hideSidebar();
+    mainView.router.back();
+  });
+  $('#toI3').click(function (e) {
+    e.preventDefault();
+    mainView.router.loadPage('identify-step2.html?'+Math.random());
+  })
+});
+/* /page identify-step2 */
+
+/* /page identify-step3 */
+app.onPageInit('identify-step3', function(page) {
+
+  $('.navbar').addClass('navbar-brand no-border');
+  mainView.showSidebar();
+
+  $('.eps-back').on('click', function() {
+    $('.navbar').removeClass('navbar-brand no-border');
+    // mainView.hideSidebar();
+    mainView.router.back();
+  });
+  $('#toI4').click(function (e) {
+    e.preventDefault();
+    mainView.router.loadPage('identify-step2.html?'+Math.random());
+  })
+});
+/* /page identify-step3 */
+
+/* /page identify-step4 */
+app.onPageInit('identify-step4', function(page) {
+
+  $('.navbar').addClass('navbar-brand no-border');
+  mainView.showSidebar();
+
+  $('.eps-back').on('click', function() {
+    $('.navbar').removeClass('navbar-brand no-border');
+    // mainView.hideSidebar();
+    mainView.router.back();
+  });
+  $('#toI2').click(function (e) {
+    e.preventDefault();
+    mainView.router.loadPage('identify-step2.html?'+Math.random());
+  })
+});
+/* /page identify-step4 */
 app.init()
