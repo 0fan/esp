@@ -131,7 +131,7 @@ app.onPageInit('identify-step4', function(page) {
     // mainView.hideSidebar();
     mainView.router.back();
   });
-  $('#toI2').click(function (e) {
+  $('#btn-open-account').click(function (e) {
     e.preventDefault();
     mainView.router.loadPage('identify-step2.html?'+Math.random());
   })
