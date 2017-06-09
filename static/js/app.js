@@ -133,4 +133,46 @@ app.onPageInit('identify-step4', function(page) {
   })
 });
 /* /page identify-step4 */
+
+
+/* page deposit-step2 */
+app.onPageInit('deposit-step2', function(page) {
+  
+  $('.popup-about').on('open', function() {
+    var wrapper = document.getElementById("sign"),
+        canvas  = wrapper.querySelector("canvas"),
+        sign;
+
+    function resizeCanvas() {
+      var ratio =  Math.max(window.devicePixelRatio || 1, 1);
+      canvas.width = canvas.offsetWidth * ratio;
+      canvas.height = canvas.offsetHeight * ratio;
+      canvas.getContext("2d").scale(ratio, ratio);
+    }
+
+    window.onresize = resizeCanvas;
+
+    resizeCanvas();
+    sign = new SignaturePad(canvas, {
+      minWidth: 2,
+      maxWidth: 4
+    });
+    
+    $('.sign-btn.reset').on('click', function() {
+      sign.clear();
+      $('.icon', this).addClass('active');
+      $('.icon', this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oAnimationend animationend', function() {
+        $(this).removeClass('active');
+      });
+    });
+
+    $('.sign-btn.done').on('click', function() {
+      app.closeModal();
+    });
+
+  });
+});
+/* /page deposit-step2 */
+
+
 app.init()

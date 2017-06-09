@@ -438,6 +438,17 @@ h6{
 }
 /* ==========  /eps-block ========== */
 
+@media screen and (min-height: 630px) and (min-width: 630px) {
+  .popup:not(.tablet-fullscreen){
+    width: 1400px;
+    margin-left: -700px;
+    border-radius: 10px;
+    height: 800px;
+    margin-top: -400px;
+    box-shadow: 0px 10px 27px rgba(53, 53, 53, 0.2);
+  }
+}
+
 /* ========== page ========== */
 /* index */
 .page[data-page=index] .guide{
@@ -514,4 +525,49 @@ h6{
   top: 0;
 }
 /*identify-step1*/
+/* deposit-step2 */
+.sign-btn{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  line-height: 96px;
+  text-align: center;
+  border: 2px solid #00abfb;
+  right: 40px;
+  border-radius: 10px;
+  color: #fff;
+  transition: all .15s;
+  box-sizing: border-box;
+}
+.sign-btn:active{
+  transform: scale(.9);
+  box-shadow: none !important;
+}
+.sign-btn.done{
+  bottom: 40px;
+  background: #00abfb;
+  box-shadow: 0 7px 20px rgba(0,171,251,.9);
+}
+.sign-btn.reset{
+  top: 40px;
+  color: #00abfb;
+}
+.sign-btn .icon{
+  font-size: 80px;
+  line-height: 1;
+  transition: all .5s;
+}
+.sign-btn .icon.active{
+  animation: sign-reset-rotate .5s backwards;
+}
+@keyframes sign-reset-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* /deposit-step2 */
 /* ========== /page ========== */
+
