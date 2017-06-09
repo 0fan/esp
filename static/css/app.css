@@ -91,14 +91,6 @@ button{
   background: #edf2f5;
   border-radius: 8px;
 }
-// .eps-form .eps-form-group:before,
-// .eps-form .eps-form-group:after{
-//    content: '';
-//    display: table;
-//  }
-// .eps-form .eps-form-group:after{
-//   clear: both;
-// }
 .eps-form .eps-form-group .eps-form-icon{
   position: absolute;
   width: 66px;
@@ -255,6 +247,8 @@ button{
 .eps-card .eps-card-content{
   display: block;
   padding: 40px 20px;
+  box-sizing: border-box;
+  min-height: 340px;
   background: #fff;
 }
 .eps-card .eps-card-content .eps-card-group{
