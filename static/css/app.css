@@ -256,6 +256,10 @@ button{
   font-size: 30px;
   line-height: 1.5;
 }
+.eps-card .eps-card-content .icon{
+  font-size: 100px;
+  color: #00ce00;
+}
 .eps-card .eps-card-content .eps-card-group:before,
 .eps-card .eps-card-content .eps-card-group:after{
   content: '';
@@ -290,7 +294,19 @@ button{
   color: #2e3032;
   position: relative;
 }
-.eps-card .eps-card-content .eps-card-group .eps-card-group-content .eps-card-btn{
+.eps-card .eps-card-content .eps-card-group .green-font{
+  font-size: 38px;
+  color: #00ce00;
+}
+.eps-card .eps-card-content .eps-card-group .blue-font{
+  font-size: 38px;
+  color: #00abfb;
+}
+.eps-card .eps-card-content .eps-card-group .black-font{
+  font-size: 38px;
+  color: #2e3032;
+}
+.eps-card .eps-card-content .eps-card-group .eps-card-btn{
   position: absolute;
   right: 0;
   top: -6.5px;
