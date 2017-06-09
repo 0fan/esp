@@ -93,7 +93,7 @@ app.onPageInit('identify-step2', function(page) {
   });
   $('#toI3').click(function (e) {
     e.preventDefault();
-    mainView.router.loadPage('identify-step2.html?'+Math.random());
+    mainView.router.loadPage('identify-step3.html?'+Math.random());
   })
 });
 /* /page identify-step2 */
@@ -111,7 +111,7 @@ app.onPageInit('identify-step3', function(page) {
   });
   $('#toI4').click(function (e) {
     e.preventDefault();
-    mainView.router.loadPage('identify-step2.html?'+Math.random());
+    mainView.router.loadPage('identify-step4.html?'+Math.random());
   })
 });
 /* /page identify-step3 */
