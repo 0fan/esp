@@ -250,6 +250,7 @@ button{
   box-sizing: border-box;
   min-height: 340px;
   background: #fff;
+  position: relative;
 }
 .eps-card .eps-card-content .eps-card-group{
   margin-bottom: 30px;
@@ -294,15 +295,15 @@ button{
   color: #2e3032;
   position: relative;
 }
-.eps-card .eps-card-content .eps-card-group .green-font{
+.eps-card .eps-card-content .green-font{
   font-size: 38px;
   color: #00ce00;
 }
-.eps-card .eps-card-content .eps-card-group .blue-font{
+.eps-card .eps-card-content .blue-font{
   font-size: 38px;
   color: #00abfb;
 }
-.eps-card .eps-card-content .eps-card-group .black-font{
+.eps-card .eps-card-content .black-font{
   font-size: 38px;
   color: #2e3032;
 }
@@ -525,3 +526,11 @@ h6{
 }
 /*identify-step1*/
 /* ========== /page ========== */
+
+
+/* ========== /identify-step4-load ========== */
+.step-load-text{
+  text-align: center;
+  margin-top: 200px;
+}
+/* ========== /identify-step4-load ========== */
