@@ -67,7 +67,8 @@ app.onPageInit('identify-step1', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
-
+  $('.steps .steps-item:eq(0)').addClass('active')
+    .siblings().removeClass('active');
   $('.eps-back').on('click', function() {
     $('.navbar').removeClass('navbar-brand no-border');
     // mainView.hideSidebar();
@@ -85,7 +86,8 @@ app.onPageInit('identify-step2', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
-
+  $('.steps .steps-item:eq(1)').addClass('active')
+    .siblings().removeClass('active');
   $('.eps-back').on('click', function() {
     $('.navbar').removeClass('navbar-brand no-border');
     // mainView.hideSidebar();
@@ -103,7 +105,8 @@ app.onPageInit('identify-step3', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
-
+  $('.steps .steps-item:eq(2)').addClass('active')
+    .siblings().removeClass('active');
   $('.eps-back').on('click', function() {
     $('.navbar').removeClass('navbar-brand no-border');
     // mainView.hideSidebar();
@@ -121,7 +124,8 @@ app.onPageInit('identify-step4', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
-
+  $('.steps .steps-item:eq(3)').addClass('active')
+    .siblings().removeClass('active');
   $('.eps-back').on('click', function() {
     $('.navbar').removeClass('navbar-brand no-border');
     // mainView.hideSidebar();
