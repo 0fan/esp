@@ -67,7 +67,8 @@ app.onPageInit('identify-step1', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
-
+  $('.steps .steps-item:eq(0)').addClass('active')
+    .siblings().removeClass('active');
   $('.eps-back').on('click', function() {
     $('.navbar').removeClass('navbar-brand no-border');
     // mainView.hideSidebar();
@@ -85,7 +86,8 @@ app.onPageInit('identify-step2', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
-
+  $('.steps .steps-item:eq(1)').addClass('active')
+    .siblings().removeClass('active');
   $('.eps-back').on('click', function() {
     $('.navbar').removeClass('navbar-brand no-border');
     // mainView.hideSidebar();
@@ -103,7 +105,8 @@ app.onPageInit('identify-step3', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
-
+  $('.steps .steps-item:eq(2)').addClass('active')
+    .siblings().removeClass('active');
   $('.eps-back').on('click', function() {
     $('.navbar').removeClass('navbar-brand no-border');
     // mainView.hideSidebar();
@@ -121,19 +124,19 @@ app.onPageInit('identify-step4', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
-
+  $('.steps .steps-item:eq(3)').addClass('active')
+    .siblings().removeClass('active');
   $('.eps-back').on('click', function() {
     $('.navbar').removeClass('navbar-brand no-border');
     // mainView.hideSidebar();
     mainView.router.back();
   });
-  $('#toI2').click(function (e) {
+  $('#btn-open-account').click(function (e) {
     e.preventDefault();
-    mainView.router.loadPage('identify-step2.html?'+Math.random());
+    mainView.router.loadPage('identify-step4-succ.html?'+Math.random());
   })
 });
 /* /page identify-step4 */
-
 
 /* page deposit-step2 */
 app.onPageInit('deposit-step2', function(page) {
@@ -176,3 +179,41 @@ app.onPageInit('deposit-step2', function(page) {
 
 
 app.init()
+/* /page deposit-step1 */
+app.onPageInit('deposit-step1', function(page) {
+
+  $('.navbar').addClass('navbar-brand no-border');
+  mainView.showSidebar();
+  $('.steps .steps-item:eq(0)').addClass('active')
+    .siblings().removeClass('active');
+  $('.eps-back').on('click', function() {
+    $('.navbar').removeClass('navbar-brand no-border');
+    // mainView.hideSidebar();
+    mainView.router.back();
+  });
+  $('#btn-open-account').click(function (e) {
+    e.preventDefault();
+    mainView.router.loadPage('identify-step4-succ.html?'+Math.random());
+  })
+});
+/* /page deposit-step1 */
+
+/* /page deposit-step2 */
+app.onPageInit('deposit-step2', function(page) {
+
+  $('.navbar').addClass('navbar-brand no-border');
+  mainView.showSidebar();
+  $('.steps .steps-item:eq(1)').addClass('active')
+    .siblings().removeClass('active');
+  $('.eps-back').on('click', function() {
+    $('.navbar').removeClass('navbar-brand no-border');
+    // mainView.hideSidebar();
+    mainView.router.back();
+  });
+  $('#btn-open-account').click(function (e) {
+    e.preventDefault();
+    mainView.router.loadPage('identify-step4-succ.html?'+Math.random());
+  })
+});
+/* /page deposit-step2 */
+app.init();

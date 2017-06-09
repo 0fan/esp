@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="static/css/swiper-3.4.2.min.css">
   <link rel="stylesheet" href="static/css/material-icon.css">
   <link rel="stylesheet" href="static/css/app.css">
+  <link rel="stylesheet" href="static/css/balloon.css">
   <!-- /style -->
 </head>
 <body>
@@ -44,9 +45,9 @@
     <!-- /navbar -->
     <!-- sidebar -->
     <div class="sidebar">
-      <div class="sidebar-title">开通银行E卡账户</div>
+      <div class="sidebar-title">存入存款</div>
       <div class="steps">
-        <div class="steps-item">
+        <div class="steps-item  active">
           <div class="steps-tail"></div>
           <div class="steps-step">
             <div class="steps-head">
@@ -55,20 +56,7 @@
               </div>
             </div>
             <div class="steps-main">
-              <div class="steps-main-title">客户信息</div>
-            </div>
-          </div>
-        </div>
-        <div class="steps-item active">
-          <div class="steps-tail"></div>
-          <div class="steps-step">
-            <div class="steps-head">
-              <div class="steps-head-inner">
-                <i class="icon material-icon materialicon-home"></i>
-              </div>
-            </div>
-            <div class="steps-main">
-              <div class="steps-main-title">银行卡</div>
+              <div class="steps-main-title">存入存款</div>
             </div>
           </div>
         </div>
@@ -81,20 +69,7 @@
               </div>
             </div>
             <div class="steps-main">
-              <div class="steps-main-title">手机号</div>
-            </div>
-          </div>
-        </div>
-        <div class="steps-item">
-          <div class="steps-tail"></div>
-          <div class="steps-step">
-            <div class="steps-head">
-              <div class="steps-head-inner">
-                <i class="icon material-icon materialicon-home"></i>
-              </div>
-            </div>
-            <div class="steps-main">
-              <div class="steps-main-title">E卡开户</div>
+              <div class="steps-main-title">输入密码</div>
             </div>
           </div>
         </div>
@@ -104,36 +79,31 @@
     <!-- pages -->
     <div class="pages">
       <!-- page -->
-      <div class="page" data-page="identify-step4">
+      <div class="page" data-page="deposit-step1">
         <!-- page-content -->
         <div class="page-content">
           <div class="eps-block">
-          <div class="eps-card">
-            <div class="eps-card-header">
-              <img src="static/img/bankBrand_xingye_white.png" alt="">
-              <div class="eps-card-header-right">E卡开户信息</div>
-            </div>
-            <div class="eps-card-content">
-              <div class="eps-card-group">
-                <div class="eps-card-group-title">姓名</div>
-                <div class="eps-card-group-content">张大力</div>
+            <div class="eps-card">
+              <div class="eps-card-header">
+                <img style="margin-left: 68px" src="static/img/eps-card-bankToECard.png" alt="">
               </div>
-              <div class="eps-card-group">
-                <div class="eps-card-group-title">身份证号</div>
-                <div class="eps-card-group-content">500109199501217913</div>
-              </div>
-              <div class="eps-card-group">
-                <div class="eps-card-group-title">银行卡号</div>
-                <div class="eps-card-group-content">622 1300 4682 1300</div>
-              </div>
-              <div class="eps-card-group">
-                <div class="eps-card-group-title">手机号码</div>
-                <div class="eps-card-group-content">18580305358</div>
+              <div class="eps-card-content">
+                <div class="eps-card-group">
+                  <div class="eps-card-group-title">存入金额</div>
+                  <div class="eps-card-group-content"><span class="green-font">50000.00</span>元</div>
+                </div>
+                <div class="eps-card-group">
+                  <div class="eps-card-group-title">存入账户</div>
+                  <div class="eps-card-group-content">500109199501217913</div>
+                </div>
+                <div class="eps-card-group">
+                  <div class="eps-card-group-title">账户性质</div>
+                  <div class="eps-card-group-content">兴业银行E账户</div>
+                </div>
               </div>
             </div>
-          </div>
             <div style="text-align: center;margin-top:100px ">
-              <button id='btn-open-account' class="eps-btn eps-btn-lg">确认开户</button>
+              <button id='btn-open-account' class="eps-btn">确认存入</button>
             </div>
           </div>
         </div>

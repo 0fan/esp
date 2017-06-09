@@ -91,14 +91,6 @@ button{
   background: #edf2f5;
   border-radius: 8px;
 }
-// .eps-form .eps-form-group:before,
-// .eps-form .eps-form-group:after{
-//    content: '';
-//    display: table;
-//  }
-// .eps-form .eps-form-group:after{
-//   clear: both;
-// }
 .eps-form .eps-form-group .eps-form-icon{
   position: absolute;
   width: 66px;
@@ -255,12 +247,19 @@ button{
 .eps-card .eps-card-content{
   display: block;
   padding: 40px 20px;
+  box-sizing: border-box;
+  min-height: 340px;
   background: #fff;
+  position: relative;
 }
 .eps-card .eps-card-content .eps-card-group{
   margin-bottom: 30px;
   font-size: 30px;
   line-height: 1.5;
+}
+.eps-card .eps-card-content .icon{
+  font-size: 100px;
+  color: #00ce00;
 }
 .eps-card .eps-card-content .eps-card-group:before,
 .eps-card .eps-card-content .eps-card-group:after{
@@ -296,7 +295,19 @@ button{
   color: #2e3032;
   position: relative;
 }
-.eps-card .eps-card-content .eps-card-group .eps-card-group-content .eps-card-btn{
+.eps-card .eps-card-content .green-font{
+  font-size: 38px;
+  color: #00ce00;
+}
+.eps-card .eps-card-content .blue-font{
+  font-size: 38px;
+  color: #00abfb;
+}
+.eps-card .eps-card-content .black-font{
+  font-size: 38px;
+  color: #2e3032;
+}
+.eps-card .eps-card-content .eps-card-group .eps-card-btn{
   position: absolute;
   right: 0;
   top: -6.5px;
@@ -525,6 +536,7 @@ h6{
   top: 0;
 }
 /*identify-step1*/
+
 /* deposit-step2 */
 .sign-btn{
   position: absolute;
@@ -571,3 +583,13 @@ h6{
 /* /deposit-step2 */
 /* ========== /page ========== */
 
+
+/* ========== /page ========== */
+
+
+/* ========== /identify-step4-load ========== */
+.step-load-text{
+  text-align: center;
+  margin-top: 200px;
+}
+/* ========== /identify-step4-load ========== */
