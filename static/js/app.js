@@ -45,11 +45,15 @@ app.onPageInit('index', function(page) {
 
 /* /page switch-project*/
 app.onPageInit('switch-project', function(page) {
-  var Swiper = myApp.swiper('.swiper-switchr', {
-    pagination:'.swiper-switch .swiper-pagination',
-    spaceBetween: 10,
-    slidesPerView: 3
+  var switch_swiper = new Swiper('.switch_swiper', {
+    scrollbar: '.swiper-scrollbar',
+    direction: 'vertical',
+    slidesPerView: 'auto',
+    mousewheelControl: true,
+    freeMode: true,
+    roundLengths : true,
   });
+
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
   $('.steps .steps-item:eq(0)').addClass('active')
