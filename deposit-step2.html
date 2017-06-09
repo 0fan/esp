@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <!-- title -->
+  <title>Document</title>
+  <!-- /title -->
+  <!-- style -->
+  <link rel="stylesheet" href="static/css/framework7.ios.css">
+  <link rel="stylesheet" href="static/css/framework7.ios.colors.css">
+  <!-- <link rel="stylesheet" href="static/css/framework7.material.css"> -->
+  <!-- <link rel="stylesheet" href="static/css/framework7.material.colors.css"> -->
+  <link rel="stylesheet" href="static/css/swiper-3.4.2.min.css">
+  <link rel="stylesheet" href="static/css/material-icon.css">
+  <link rel="stylesheet" href="static/css/app.css">
+  <!-- /style -->
+</head>
+<body>
+  
+<!-- views -->
+<div class="views">
+  <!-- view-main -->
+  <div class="view view-main">
+    <!-- navbar -->
+    <div class="navbar navbar-brand no-border">
+      <div class="navbar-inner">
+        <div class="left">
+          <img class="logo" src="static/img/brand_white.png">
+          <img class="bank_logo" src="static/img/bankBrand_xingye_white.png">
+        </div>
+        <div class="right">
+          <a href="#" class="link eps-back">
+            <i class="icon material-icon materialicon-navigatebefore"></i>
+            <span>返回</span>
+          </a>
+          <a href="#" class="link">
+            <i class="icon material-icon materialicon-home"></i>
+            <span>首页</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /navbar -->
+    <!-- pages -->
+    <div class="pages">
+      <!-- page -->
+      <div class="page" data-page="deposit-step2">
+        <!-- page-content -->
+        <div class="page-content">
+           <p><a href="#" data-popup=".popup-about" class="open-popup">Open About Popup </a></p>
+        </div>
+        <!-- /page-content -->
+        <!-- About Popup -->
+        <div class="popup popup-about">
+          <a class="sign-btn done" href="#"><i class="icon material-icon materialicon-check"></i></a>
+          <a class="sign-btn reset" href="#"><i class="icon material-icon materialicon-refresh"></i></a>
+          <div id="sign" style="position: absolute;top: 30px;right: 180px;bottom: 30px;left: 30px;">
+            <canvas style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;"></canvas>
+          </div>
+        </div>
+      </div>
+      <!-- /page -->
+    </div>
+    <!-- /pages -->
+  </div>
+  <!-- /view-main -->
+</div>
+<!-- /views -->
+
+</body>
+<!-- script -->
+<script src="static/js/jquery-1.9.1.min.js"></script>
+<script src="static/js/framework7.min.js"></script>
+<script src="static/js/swiper-3.4.2.jquery.min.js"></script>
+<script src="static/js/signature_pad.min.js"></script>
+<script src="static/js/toast.js"></script>
+<script src="static/js/app.js"></script>
+<!-- /script -->
+</html>

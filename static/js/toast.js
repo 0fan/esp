@@ -102,16 +102,4 @@
 
   window.Toast = Toast;
 
-})()
-
-var toast = new Toast({
-  text: '我是一个通知',
-  timer: 5000
-})
-
-toast.on('init', function(){
-  console.log('init');
-})
-toast.on('destory', function(){
-  console.log('destory');
-})
+})();
