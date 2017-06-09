@@ -139,7 +139,7 @@ app.onPageInit('identify-step4', function(page) {
 /* /page identify-step4 */
 
 /* /page deposit-step1 */
-app.onPageInit('deposit-step1', function(page) {
+app.onPageInit('save-step1', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
@@ -158,7 +158,7 @@ app.onPageInit('deposit-step1', function(page) {
 /* /page deposit-step1 */
 
 /* /page deposit-step2 */
-app.onPageInit('deposit-step2', function(page) {
+app.onPageInit('save-step2', function(page) {
 
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
