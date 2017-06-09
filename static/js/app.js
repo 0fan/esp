@@ -133,8 +133,8 @@ app.onPageInit('identify-step4', function(page) {
   });
   $('#btn-open-account').click(function (e) {
     e.preventDefault();
-    mainView.router.loadPage('identify-step2.html?'+Math.random());
+    mainView.router.loadPage('identify-step4-succ.html?'+Math.random());
   })
 });
 /* /page identify-step4 */
-app.init()
+app.init();
