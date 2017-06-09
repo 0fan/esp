@@ -43,6 +43,29 @@ app.onPageInit('index', function(page) {
 });
 /* /page index */
 
+/* /page switch-project*/
+app.onPageInit('switch-project', function(page) {
+  var Swiper = myApp.swiper('.swiper-switchr', {
+    pagination:'.swiper-switch .swiper-pagination',
+    spaceBetween: 10,
+    slidesPerView: 3
+  });
+  $('.navbar').addClass('navbar-brand no-border');
+  mainView.showSidebar();
+  $('.steps .steps-item:eq(0)').addClass('active')
+    .siblings().removeClass('active');
+  $('.eps-back').on('click', function() {
+    $('.navbar').removeClass('navbar-brand no-border');
+    // mainView.hideSidebar();
+    mainView.router.back();
+  });
+  $('#btn-open-account').click(function (e) {
+    e.preventDefault();
+    mainView.router.loadPage('identify-step4-succ.html?'+Math.random());
+  })
+});
+/* /page switch-project */
+
 /* page about */
 app.onPageInit('about', function(page) {
 
