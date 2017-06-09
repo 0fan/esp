@@ -170,6 +170,10 @@ app.onPageInit('deposit-step2', function(page) {
     });
 
     $('.sign-btn.done').on('click', function() {
+      Toast({
+        text: '签名成功',
+        timer: 2000
+      })
       app.closeModal();
     });
 

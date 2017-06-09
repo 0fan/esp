@@ -330,6 +330,22 @@ button{
   bottom: 0;
   background: #c9caca;
   left: 28px;
+  overflow: hidden;
+}
+.steps .steps-item .steps-tail em{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 1s linear;
+  background: #00abfb;
+  top: -100%;
+  left: 0;
+}
+.steps .steps-item.active .steps-tail em{
+  // top: 0;
+}
+.steps .steps-item.out .steps-tail em{
+  top: 100%;
 }
 .steps .steps-item:last-child .steps-tail{
   display: none;
@@ -351,13 +367,28 @@ button{
   text-overflow: ellipsis;
   white-space: nowrap;
   border-radius: 50%;
+  position: relative;
+}
+.steps .steps-item .steps-step .steps-head .steps-head-inner em{
+  position: absolute;
+  width: 100%;
+  transition: all .4s linear;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: #00abfb;
 }
 .steps .steps-item .steps-step .steps-head .steps-head-inner .icon{
   font-size: 36px;
   color: #fff;
+  position: relative;
+  z-index: 999;
 }
-.steps .steps-item.active .steps-step .steps-head .steps-head-inner{
-  background: #00abfb;
+.steps .steps-item.active .steps-step .steps-head .steps-head-inner em{
+  top: 0;
+}
+.steps .steps-item.out .steps-step .steps-head .steps-head-inner em{
+  top: 100%;
 }
 .steps .steps-item .steps-step .steps-main{
   margin-left: 80px;
@@ -365,6 +396,7 @@ button{
 }
 .steps .steps-item .steps-step .steps-main .steps-main-title{
   color: #c9caca;
+  transition: all .3s;
   font-size: 26px;
 }
 .steps .steps-item.active .steps-step .steps-main .steps-main-title{
