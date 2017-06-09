@@ -91,11 +91,11 @@ button{
   background: #edf2f5;
   border-radius: 8px;
 }
-// .eps-form .eps-form-group:before,
-// .eps-form .eps-form-group:after{
-//   content: '';
-//   display: table;
-// }
+.eps-form .eps-form-group:before,
+.eps-form .eps-form-group:after{
+   content: '';
+   display: table;
+ }
 .eps-form .eps-form-group:after{
   clear: both;
 }
