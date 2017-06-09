@@ -17,7 +17,7 @@
   <!-- /style -->
 </head>
 <body>
-  
+
 <!-- views -->
 <div class="views">
   <!-- view-main -->
@@ -42,39 +42,55 @@
       </div>
     </div>
     <!-- /navbar -->
-    <!-- pages -->
-    <div class="pages">
-      <!-- page -->
-      <div class="page" data-page="save-step2">
-        <!-- page-content -->
-        <div class="page-content">
-           <p><a href="#" data-popup=".popup-about" class="open-popup">Open About Popup </a></p>
-          <div class="eps-block">
-            <div class="eps-guide lf"></div>
-            <form style="margin-left: 90px" action="#" class="eps-form lf">
-              <div class="eps-form-group" data-balloon-theme="yellow" data-balloon="验证码输入不正确" data-balloon-pos="left">
-                <div class="eps-form-icon">
-                  <i class="icon material-icon materialicon-payment"></i>
-                </div>
-                <input type="text" class="eps-form-control" placeholder="银行卡交易密码">
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-title">选择项目</div>
+      <div class="steps">
+        <div class="steps-item">
+          <div class="steps-tail"></div>
+          <div class="steps-step">
+            <div class="steps-head">
+              <div class="steps-head-inner">
+                <i class="icon material-icon materialicon-home"></i>
               </div>
-              <div>
-                <button href="#" id="btn-right-save" class="eps-btn eps-btn-lg">确认</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- /page-content -->
-        <!-- About Popup -->
-        <div class="popup popup-about">
-          <a class="sign-btn done" href="#"><i class="icon material-icon materialicon-check"></i></a>
-          <a class="sign-btn reset" href="#"><i class="icon material-icon materialicon-refresh"></i></a>
-          <div id="sign" style="position: absolute;top: 30px;right: 180px;bottom: 30px;left: 30px;">
-            <canvas style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;"></canvas>
+            </div>
+            <div class="steps-main">
+              <div class="steps-main-title">选择项目类型</div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- /page -->
+    </div>
+    <!-- /sidebar -->
+    <!-- pages -->
+    <div class="pages">
+      <div class="page" data-page="switch-project">
+        <div class="page-content">
+          <div class="eps-block">
+            <!-- Swiper -->
+            <div class="swiper-container switch_swiper" style="overflow: visible">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-box">
+                    <div class="swiper-content"></div>
+                    <div class="swiper-footer">高层</div>
+                  </div>
+                  <div class="swiper-box">
+                    <div class="swiper-content"></div>
+                    <div class="swiper-footer">其它户型</div>
+                  </div>
+                  <div class="swiper-box gray-shadow">
+                    <div class="swiper-content"></div>
+                    <div class="swiper-footer">其它户型</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Scroll Bar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- /pages -->
   </div>
@@ -87,7 +103,6 @@
 <script src="static/js/jquery-1.9.1.min.js"></script>
 <script src="static/js/framework7.min.js"></script>
 <script src="static/js/swiper-3.4.2.jquery.min.js"></script>
-<script src="static/js/signature_pad.min.js"></script>
 <script src="static/js/app.js"></script>
 <!-- /script -->
 </html>
