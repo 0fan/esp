@@ -53,7 +53,9 @@ app.onPageInit('switch-project', function(page) {
     freeMode: true,
     roundLengths : true,
   });
-
+  $('.switch_swiper .swiper-box').each(function () {
+    $('.switch_swiper .swiper-box:nth-child(4n + 4)').css({'margin-right':0});
+  })
   $('.navbar').addClass('navbar-brand no-border');
   mainView.showSidebar();
   $('.steps .steps-item:eq(0)').addClass('active')
