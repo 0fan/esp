@@ -47,7 +47,7 @@
     <div class="sidebar">
       <div class="sidebar-title">存入存款</div>
       <div class="steps">
-        <div class="steps-item  active">
+        <div class="steps-item">
           <div class="steps-tail"></div>
           <div class="steps-step">
             <div class="steps-head">
@@ -60,7 +60,7 @@
             </div>
           </div>
         </div>
-        <div class="steps-item">
+        <div class="steps-item active">
           <div class="steps-tail"></div>
           <div class="steps-step">
             <div class="steps-head">
@@ -79,32 +79,22 @@
     <!-- pages -->
     <div class="pages">
       <!-- page -->
-      <div class="page" data-page="deposit-step1">
+      <div class="page" data-page="deposit-step2">
         <!-- page-content -->
         <div class="page-content">
           <div class="eps-block">
-            <div class="eps-card">
-              <div class="eps-card-header">
-                <img style="margin-left: 68px" src="static/img/eps-card-bankToECard.png" alt="">
+            <div class="eps-guide lf"></div>
+            <form style="margin-left: 90px" action="#" class="eps-form lf">
+              <div class="eps-form-group" data-balloon-theme="yellow" data-balloon="验证码输入不正确" data-balloon-pos="left">
+                <div class="eps-form-icon">
+                  <i class="icon material-icon materialicon-assignmentind"></i>
+                </div>
+                <input type="text" class="eps-form-control" placeholder="银行卡交易密码">
               </div>
-              <div class="eps-card-content">
-                <div class="eps-card-group">
-                  <div class="eps-card-group-title">存入金额</div>
-                  <div class="eps-card-group-content"><span class="green-font">50000.00</span>元</div>
-                </div>
-                <div class="eps-card-group">
-                  <div class="eps-card-group-title">存入账户</div>
-                  <div class="eps-card-group-content">500109199501217913</div>
-                </div>
-                <div class="eps-card-group">
-                  <div class="eps-card-group-title">账户性质</div>
-                  <div class="eps-card-group-content">兴业银行E账户</div>
-                </div>
+              <div>
+                <button href="#" id="toI2" class="eps-btn eps-btn-lg">确认</button>
               </div>
-            </div>
-            <div style="text-align: center;margin-top:100px ">
-              <button id='btn-open-account' class="eps-btn">确认存入</button>
-            </div>
+            </form>
           </div>
         </div>
         <!-- /page-content -->
