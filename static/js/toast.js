@@ -24,9 +24,8 @@
 
     var self = this;
 
-    var _fontSize     = 24,
-        _lineHeight   = 1.5,
-        _borderRadius = 24 * 1.5;
+    var _height   = 60,
+        _fontSize = 24;
 
     var isInit = false; // transitionEnd事件会对css改变的数量一样，用个开关控制只传递一次init事件
 
@@ -40,12 +39,13 @@
       transition: 'all .5s',
       zIndex: 99999,
       letterSpacing: '2px',
-      padding: '.5em 1.5em',
+      padding: '0 1.5em',
       color: '#fff',
       background: 'rgba(0,0,0,.8)',
       fontSize: _fontSize + 'px',
-      lineHeight: _lineHeight,
-      borderRadius: _borderRadius + 'px',
+      lineHeight: _height + 'px',
+      height: _height + 'px',
+      borderRadius: (_height / 2) + 'px',
     });
     
     this.bound.appendTo(this.config.target);
